@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My To-Do List</title>
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://e1.pxfuel.com/desktop-wallpaper/155/255/desktop-wallpaper-nice-website-backgrounds-nice-background-pic.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.8); 
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    input[type="text"] {
+      width: 70%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 10px;
+      background-color: #f9f9f9;
+      margin-bottom: 5px;
+      border-radius: 5px;
+    }
+
+    li.checked {
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: line-through;
+    }
+
+    #tomorrowList {
+      margin-top: 30px;
+    }
+
+    #tomorrowList h2 {
+      text-align: center;
+    }
+
+    #tomorrowList input[type="date"] {
+      width: 70%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Today's To-Do List</h1>
+    <form id="taskForm" onsubmit="return addTask('taskList')">
+      <input type="text" id="taskInput" name="taskInput" placeholder="Add a new task" required>
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="taskList"></ul>
+    <form onsubmit="return clearAll('taskList')">
+      <button type="submit">Clear All</button>
+    </form>
+  </div>
+
+  <div class="container" id="tomorrowList">
+    <h2>Tomorrow's To-Do List</h2>
+    <form onsubmit="return addTask('tomorrowTaskList')">
+      <input type="text" id="tomorrowTaskInput" name="tomorrowTaskInput" placeholder="Add a new task" required>
+      <input type="date" id="tomorrowDateInput" name="tomorrowDateInput" required>
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="tomorrowTaskList"></ul>
+    <form onsubmit="return clearAll('tomorrowTaskList')">
+      <button type="submit">Clear All</button>
+    </form>
+  </div>
+</body>
+</html>
