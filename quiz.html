@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Quiz App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #4CAF50;
+    }
+
+    .question {
+      margin-bottom: 30px;
+    }
+
+    .question p {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>General Knowledge Quiz </h1>
+    <div class="question">
+      <p>1. Which is the capital city of Karnataka?</p>
+      <ul>
+        <li><input type="radio" name="q1" value="paris"> Vishakapattanam</li>
+        <li><input type="radio" name="q1" value="london"> Bangalore</li>
+        <li><input type="radio" name="q1" value="berlin"> Lucknow</li>
+      </ul>
+    </div>
+    <div class="question">
+      <p>2. Which is the largest planet in our solar system?</p>
+      <ul>
+        <li><input type="radio" name="q2" value="jupiter"> Jupiter</li>
+        <li><input type="radio" name="q2" value="mars"> Mars</li>
+        <li><input type="radio" name="q2" value="venus"> Venus</li>
+      </ul>
+    </div>
+    <div class="question">
+      <p>3. Which country is known as the Land of the Rising Sun?</p>
+      <ul>
+        <li><input type="radio" name="q3" value="japan"> Japan</li>
+        <li><input type="radio" name="q3" value="china"> China</li>
+        <li><input type="radio" name="q3" value="india"> India</li>
+      </ul>
+    </div>
+    <div class="question">
+      <p>4. Who wrote the play "Romeo and Juliet"?</p>
+      <ul>
+        <li><input type="radio" name="q4" value="shakespeare"> William Shakespeare</li>
+        <li><input type="radio" name="q4" value="tolstoy"> Leo Tolstoy</li>
+        <li><input type="radio" name="q4" value="dickens"> Charles Dickens</li>
+      </ul>
+    </div>
+    <div class="question">
+      <p>5. What is the chemical symbol for water?</p>
+      <ul>
+        <li><input type="radio" name="q5" value="h2o"> H<sub>2</sub>O</li>
+        <li><input type="radio" name="q5" value="co2"> CO<sub>2</sub></li>
+        <li><input type="radio" name="q5" value="o2"> O<sub>2</sub></li>
+      </ul>
+    </div>
+    <div class="question">
+      <p>6. Who painted the Mona Lisa?</p>
+      <ul>
+        <li><input type="radio" name="q6" value="da-vinci"> Leonardo da Vinci</li>
+        <li><input type="radio" name="q6" value="picasso"> Pablo Picasso</li>
+        <li><input type="radio" name="q6" value="vangogh"> Vincent van Gogh</li>
+      </ul>
+    </div>
+    <div class="question">
+      <p>7. What is the capital of India?</p>
+      <ul>
+        <li><input type="radio" name="q7" value="sydney"> New Delhi</li>
+        <li><input type="radio" name="q7" value="melbourne"> Bangalore</li>
+        <li><input type="radio" name="q7" value="canberra"> Chennai</li>
+      </ul>
+    </div>
+    <div class="question">
+      <p>8. Which is the largest ocean in the world?</p>
+      <ul>
+        <li><input type="radio" name="q8" value="pacific"> Pacific Ocean</li>
+        <li><input type="radio" name="q8" value="atlantic"> Atlantic Ocean</li>
+        <li><input type="radio" name="q8" value="indian"> Indian Ocean</li>
+      </ul>
+    </div>
+    <div class="question">
+      <p>9. Who wrote National Anthem of India"?</p>
+      <ul>
+        <li><input type="radio" name="q9" value="lee"> Rabindranath Tagore</li>
+        <li><input type="radio" name="q9" value="hemingway"> Dr B.R Ambedkar</li>
+        <li><input type="radio" name="q9" value="fitzgerald"> Mahathma Gandhi</li>
+      </ul>
+    </div>
+    <div class="question">
+      <p>10. Which is the tallest mountain in the world?</p>
+      <ul>
+        <li><input type="radio" name="q10" value="everest"> Mount Everest</li>
+        <li><input type="radio" name="q10" value="kilimanjaro"> Mount Kilimanjaro</li>
+        <li><input type="radio" name="q10" value="denali"> Denali (Mount McKinley)</li>
+      </ul>
+    </div>
+    <button>Submit Quiz</button>
+  </div>
+</body>
+</html>
